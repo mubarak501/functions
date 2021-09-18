@@ -1,0 +1,89 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#dunuimage {
+  background-color: gray;
+  border-radius: 100px;
+  width: 100px;
+  animation-iteration-count: infinite;
+  animation-duration: 1;
+
+  animation: mymove 2s linear infinite;
+  height: 100px;
+  position: relative;
+}
+@keyframes myanimation {
+  0% {
+    left: 26px;
+    top: 26px;
+  }
+  12% {
+    left: 52px;
+    top: 26px;
+  }
+  24% {
+    left: 26px;
+    top: 26px;
+  }
+  36% {
+    left: 0px;
+    top: 26px;
+  }
+  48% {
+    left: 26px;
+    top: 26px;
+  }
+  60% {
+    left: 26px;
+    top: 0px;
+  }
+  72% {
+    top: 26px;
+    left: 26px;
+  }
+  84% {
+    top: 52px;
+    top: 26;
+  }
+  100% {
+    top: 26px;
+    left: 26px;
+  }
+}
+.inner {
+  background-color: blue;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  position: absolute;
+  top: 24px;
+  left: 25px;
+  animation: myanimation 3s linear infinite;
+}
+
+@keyframes mymove {
+  0% {
+    background-color: greenyellow;
+  }
+  30% {
+    background-color: hotpink;
+  }
+  50% {
+    background-color: purple;
+  }
+  100% {
+    background-color: black;
+  }
+}

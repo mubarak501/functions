@@ -61,12 +61,90 @@ console.log(uppercase("the quick brown fox"));
 // Write a JavaScript function that accepts a string as a parameter and find the longest word within the string. Go to the editor
 // Example string : 'Web Development Tutorial'
 // Expected Output : 'Development'
-const n = "Web Development Tutorial ";
-let longestWord = (n) => {
-  let nArray = n.split(" ");
-  let sortednArray = nArray.sort((strA, strB) => {
-    return strB.length - strA.length;
-  });
-  return sortednArray[0];
+
+const longestWord = (n = "") => {
+  let newArray = n.split(" ");
+
+  let storeArray = 0;
+  let word = "";
+
+  for (let i of newArray) {
+    if (i.length > storeArray) {
+      storeArray = i.length;
+      word = i;
+    }
+  }
+  console.log(word);
 };
-console.log(longestWord(n));
+longestWord("web Development Tutorial");
+
+// Write a JavaScript function that accepts a string as a parameter and counts the number of vowels within the string. Go to the editor
+// Note : As the letter 'y' can be regarded as both a vowel and a consonant, we do not count 'y' as vowel here.
+// Example string : 'The quick brown fox'
+// Expected Output : 5
+
+const vowelSortes = (n = "") => {
+  let vowels = "aeiouAEIOU";
+  let countVowels = 0;
+  for (let i = 0; i < n.length; i++) {
+    if (vowels.indexOf(n[i]) !== -1) {
+      countVowels += 1;
+    }
+  }
+  return countVowels;
+};
+console.log(vowelSortes("the quick brown fox"));
+
+// Write a JavaScript function which accepts an argument and returns the type. Go to the editor
+// Note : There are six possible values that typeof returns: object, boolean, function, number, string, and undefined.
+
+const types = (n = "") => {
+  let dtype = [Function, RegExp, Number, String, Boolean, Object];
+  if (typeof n === "object" || typeof n === "function") {
+  }
+  return typeof n;
+};
+console.log(types("a"));
+console.log(types(1));
+console.log(types(true));
+
+// Write a JavaScript function to extract unique characters from a string. Go to the editor
+// Example string : "thequickbrownfoxjumpsoverthelazydog"
+// Expected Output : "thequickbrownfxjmpsvlazydg"
+
+const findUnique = (n) => {
+  let uniq = "";
+
+  for (let i = 0; i < n.length; i++) {
+    if (uniq.includes(n[i]) === false) {
+      // If the character not present in uniq
+      // Concatenate the character with uniq
+      uniq += n[i];
+    }
+  }
+  return uniq;
+};
+
+console.log(findUnique("thequickbrownfoxjumpsoverthelazydog"));
+
+// Write a JavaScript function that returns array elements larger than a number.
+
+const largerNumber = (n) => {
+  return function (newValue) {
+    return newValue >= n;
+  };
+};
+let result = [11, 45, 4, 31, 64, 10].filter(largerNumber(20));
+
+console.log(result + " Larger Numbers");
+
+// Write a JavaScript function that accept a list of country names as input and returns the longest country name as output.
+
+const Longest_Country_Name = (n) => {
+  return n.reduce(function (largestName, country) {
+    return largestName.length > country.length ? largestName : country;
+  }, "");
+};
+console.log(
+  Longest_Country_Name(["Australia", "Germany", "United States of America"])
+);
