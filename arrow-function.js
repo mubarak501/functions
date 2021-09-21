@@ -148,3 +148,93 @@ const Longest_Country_Name = (n) => {
 console.log(
   Longest_Country_Name(["Australia", "Germany", "United States of America"])
 );
+//new images rendering
+let d = [
+  {
+    image:
+      "https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyMzAzODZ8MHwxfHNlYXJjaHwxfHxjYXR8ZW58MHx8fHwxNjIxOTQwNTkz&ixlib=rb-1.2.1&q=80&w=1080",
+    imageName: " Cp6s3jERPl",
+  },
+  {
+    image:
+      "https://images.unsplash.com/photo-1526336024174-e58f5cdd8e13?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyMzAzODZ8MHwxfHNlYXJjaHwyfHxjYXR8ZW58MHx8fHwxNjIxOTQwNTkz&ixlib=rb-1.2.1&q=80&w=1080",
+    imageName: " X9geZuQ4",
+  },
+  {
+    image:
+      "https://images.unsplash.com/photo-1495360010541-f48722b34f7d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyMzAzODZ8MHwxfHNlYXJjaHwzfHxjYXR8ZW58MHx8fHwxNjIxOTQwNTkz&ixlib=rb-1.2.1&q=80&w=1080",
+    imageName: " Fb",
+  },
+  {
+    image:
+      "https://images.unsplash.com/photo-1561948955-570b270e7c36?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyMzAzODZ8MHwxfHNlYXJjaHw0fHxjYXR8ZW58MHx8fHwxNjIxOTQwNTkz&ixlib=rb-1.2.1&q=80&w=1080",
+    imageName: " 6Vtedj5yslU51peKwy",
+  },
+  {
+    image:
+      "https://images.unsplash.com/photo-1548247416-ec66f4900b2e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyMzAzODZ8MHwxfHNlYXJjaHw1fHxjYXR8ZW58MHx8fHwxNjIxOTQwNTkz&ixlib=rb-1.2.1&q=80&w=1080",
+    imageName: " EwHEx4fsVt10QtzMn82",
+  },
+  {
+    image:
+      "https://images.unsplash.com/photo-1543852786-1cf6624b9987?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyMzAzODZ8MHwxfHNlYXJjaHw2fHxjYXR8ZW58MHx8fHwxNjIxOTQwNTkz&ixlib=rb-1.2.1&q=80&w=1080",
+    imageName: " wDY6Qmngh072vOWahJwlxq0o",
+  },
+  {
+    image:
+      "https://images.unsplash.com/photo-1511044568932-338cba0ad803?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyMzAzODZ8MHwxfHNlYXJjaHw3fHxjYXR8ZW58MHx8fHwxNjIxOTQwNTkz&ixlib=rb-1.2.1&q=80&w=1080",
+    imageName: " KaJqZZa",
+  },
+  {
+    image:
+      "https://images.unsplash.com/photo-1574158622682-e40e69881006?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyMzAzODZ8MHwxfHNlYXJjaHw4fHxjYXR8ZW58MHx8fHwxNjIxOTQwNTkz&ixlib=rb-1.2.1&q=80&w=1080",
+    imageName: " 1LPVKoPE",
+  },
+  {
+    image:
+      "https://images.unsplash.com/photo-1501820488136-72669149e0d4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyMzAzODZ8MHwxfHNlYXJjaHw5fHxjYXR8ZW58MHx8fHwxNjIxOTQwNTkz&ixlib=rb-1.2.1&q=80&w=1080",
+    imageName: " 8l7dg6X2W5U0RwF",
+  },
+  {
+    image:
+      "https://images.unsplash.com/photo-1478098711619-5ab0b478d6e6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyMzAzODZ8MHwxfHNlYXJjaHwxMHx8Y2F0fGVufDB8fHx8MTYyMTk0MDU5Mw&ixlib=rb-1.2.1&q=80&w=1080",
+    imageName: " FBwg",
+  },
+  {
+    image:
+      "https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyMzAzODZ8MHwxfHNlYXJjaHwxfHxjYXR8ZW58MHx8fHwxNjIxOTQwNTkz&ixlib=rb-1.2.1&q=80&w=1080",
+    imageName: " KTetn1wcGHldyRtNtUi9Vd0",
+  },
+  {
+    image:
+      "https://images.unsplash.com/photo-1526336024174-e58f5cdd8e13?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyMzAzODZ8MHwxfHNlYXJjaHwyfHxjYXR8ZW58MHx8fHwxNjIxOTQwNTkz&ixlib=rb-1.2.1&q=80&w=1080",
+    imageName: " wO0IDE99WI",
+  },
+  {
+    image:
+      "https://images.unsplash.com/photo-1501820488136-72669149e0d4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyMzAzODZ8MHwxfHNlYXJjaHw5fHxjYXR8ZW58MHx8fHwxNjIxOTQwNTkz&ixlib=rb-1.2.1&q=80&w=1080",
+    imageName: " EB6qVyYTV1P",
+  },
+  {
+    image:
+      "https://images.unsplash.com/photo-1478098711619-5ab0b478d6e6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyMzAzODZ8MHwxfHNlYXJjaHwxMHx8Y2F0fGVufDB8fHx8MTYyMTk0MDU5Mw&ixlib=rb-1.2.1&q=80&w=1080",
+    imageName: " yyAvhaSG",
+  },
+  {
+    image:
+      "https://images.unsplash.com/photo-1511044568932-338cba0ad803?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyMzAzODZ8MHwxfHNlYXJjaHw3fHxjYXR8ZW58MHx8fHwxNjIxOTQwNTkz&ixlib=rb-1.2.1&q=80&w=1080",
+    imageName: " HItFouW78",
+  },
+];
+let a = document.querySelector(".data");
+for (i = 0; i < d.length; i++) {
+  a.innerHTML += `<img src=" ${d[i].image}" </> <h2>${d[i].imageName}</h2>`;
+}
+function myForLoopFunction() {
+  let text = "";
+  let i;
+  for (i = 1; i < 6; i++) {
+    text += `<li>${i}</li>`;
+  }
+  document.getElementById("myUl").innerHTML = text;
+}

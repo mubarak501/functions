@@ -191,6 +191,7 @@
   50% {
     transform: translateY(1px);
   }
+
   0% {
     transform: translateY(-1px);
   }
@@ -241,4 +242,36 @@
   100% {
     background-image: url(./sliderimage.jpg);
   }
+}
+
+/*Dom Portion......................*/
+.data {
+  position: relative;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  top: 570px;
+  text-align: center;
+  align-items: center;
+}
+.data img {
+  border-radius: 100px;
+  width: 50%;
+  height: 50%;
+}
+#myBtn {
+  width: 50%;
+}
+.myData {
+  padding: 50px;
+
+  position: relative;
+  top: 580px;
+  flex-direction: column;
+}
+#myBtn1 {
+  position: absolute;
+  left: 25px;
+  top: 14px;
 }
