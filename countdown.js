@@ -2,7 +2,7 @@ const daysEl = document.getElementById("days");
 const hoursEl = document.getElementById("hours");
 const minsEl = document.getElementById("mins");
 const secondsEl = document.getElementById("seconds");
-
+// const newYear = "01 jan 2022";
 let inputValue = document.getElementById("myInput");
 inputValue.value = new Date(Date.now() + 10000).toLocaleDateString("en-US", {
   year: "numeric",

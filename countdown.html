@@ -8,30 +8,34 @@
     <link rel="stylesheet" href="./countdown.css" />
   </head>
   <body>
-    <div class="main">
-      <div class="countDown">
-        <p id="days">0</p>
-        <span>Days</span>
+    <div class="wholeMain">
+      <div class="main">
+        <div class="countDown">
+          <p id="days">0</p>
+          <span>Days</span>
+        </div>
+        <div class="countDown">
+          <p id="hours">0</p>
+          <span>Hours</span>
+        </div>
+        <div class="countDown">
+          <p id="mins">0</p>
+          <span>Mins</span>
+        </div>
+        <div class="countDown">
+          <p id="seconds">0</p>
+          <span>Seconds</span>
+        </div>
       </div>
-      <div class="countDown">
-        <p id="hours">0</p>
-        <span>Hours</span>
+      <div class="secondMain">
+        <input type="date" placeholder="Type something..." id="myInput" />
+        <button type="button" id="StartTimer" onclick="getInputValue();">
+          Start
+        </button>
+        <button type="button" id="StopTimer" onclick="getInputValueforstop();">
+          Stop
+        </button>
       </div>
-      <div class="countDown">
-        <p id="mins">0</p>
-        <span>Mins</span>
-      </div>
-      <div class="countDown">
-        <p id="seconds">0</p>
-        <span>Seconds</span>
-      </div>
-      <input type="date" placeholder="Type something..." id="myInput" />
-      <button type="button" id="StartTimer" onclick="getInputValue();">
-        Start
-      </button>
-      <button type="button" id="StopTimer" onclick="getInputValueforstop();">
-        Stop
-      </button>
     </div>
     <!-- <div></div> -->
     <script src="./countdown.js"></script>
