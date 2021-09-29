@@ -9,6 +9,11 @@
   align-items: center;
   text-align: center;
   flex-direction: column;
+  background-image: url(./images/bg-images.png) !important;
+  background-position: center center;
+  background-size: cover;
+  min-height: 100vh;
+  max-width: 100%;
 }
 .rockPaperScissor {
   text-align: center;
@@ -17,6 +22,15 @@
 .inputsForGames {
   text-align: center;
   margin-top: 20px;
+}
+#chooseOption {
+  width: 80px;
+  text-align: center;
+  padding: 2px;
+  color: white;
+  background-color: grey;
+  border-radius: 20px;
+  border: 20px black;
 }
 #submitBtn {
   position: relative;
@@ -46,8 +60,14 @@
   opacity: 0;
   transition: all 0.8s;
 }
+#submitBtn:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s;
+}
 #computerRandomInputs {
-  padding: 8px;
+  padding: 12px;
   align-items: center;
   font-size: 1.3rem;
   font-family: sans-serif;
@@ -56,13 +76,20 @@
   width: 220px;
   height: 8vh;
   border-radius: 10px;
-}
-#submitBtn:after {
-  padding: 0;
-  margin: 0;
   opacity: 1;
-  transition: 0s;
 }
+/* #computerRandomInputs::after {
+  content: " ";
+  background-color: grey;
+  padding: 8px;
+  align-items: center;
+  font-size: 1.3rem;
+  font-family: sans-serif;
+  color: white;
+  width: 220px;
+  height: 8vh;
+  border-radius: 10px;
+} */
 
 .empty {
   display: flex;
