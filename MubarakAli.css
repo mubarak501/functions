@@ -1,0 +1,31 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.rockPaperScissor {
+  text-align: center;
+  margin-top: 15px;
+}
+.inputsForGames {
+  text-align: center;
+  margin-top: 20px;
+}
+.empty {
+  display: flex;
+  width: 100%;
+
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#result {
+  margin: 10px;
+  background-color: grey;
+  width: 200px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
