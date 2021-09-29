@@ -3,6 +3,13 @@
   padding: 0px;
   box-sizing: border-box;
 }
+.mainBody {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
 .rockPaperScissor {
   text-align: center;
   margin-top: 15px;
@@ -11,6 +18,52 @@
   text-align: center;
   margin-top: 20px;
 }
+#submitBtn {
+  position: relative;
+  background-color: #04aa6d;
+  border: none;
+  font-size: 28px;
+  color: #ffffff;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 50px;
+}
+#submitBtn:after {
+  content: "";
+  background: #90ee90;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s;
+}
+#computerRandomInputs {
+  padding: 8px;
+  align-items: center;
+  font-size: 1.3rem;
+  font-family: sans-serif;
+  color: white;
+  background-color: grey;
+  width: 220px;
+  height: 8vh;
+  border-radius: 10px;
+}
+#submitBtn:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s;
+}
+
 .empty {
   display: flex;
   width: 100%;
@@ -22,10 +75,13 @@
 #result {
   margin: 10px;
   background-color: grey;
-  width: 200px;
+  width: 300px;
   height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
+  border-radius: 10px;
+  color: white;
+  font-size: 1.5rem;
 }

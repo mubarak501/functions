@@ -15,24 +15,24 @@ document
     const COMPUTERValue = computerOptions[mRandomNum()];
 
     if (COMPUTERValue === playerchoose) {
-      result.textContent = "tie";
+      result.textContent = "😕Tie";
     } else if (playerchoose == "rock") {
       if (COMPUTERValue == "paper") {
-        result.textContent = "lose";
+        result.textContent = "😞Lose";
       } else {
-        result.textContent = "Won";
+        result.textContent = "😃Won";
       }
     } else if (playerchoose == "scissor") {
       if (COMPUTERValue == "rock") {
-        result.textContent = "lose";
+        result.textContent = "😞Lose";
       } else {
-        result.textContent = "won";
+        result.textContent = "😃Won";
       }
     } else if (playerchoose == "paper") {
       if (COMPUTERValue == "scissor") {
-        result.textContent = "lose";
+        result.textContent = "😞Lose";
       } else {
-        result.textContent = "won";
+        result.textContent = "😃Won";
       }
     }
     console.log(COMPUTERValue);
