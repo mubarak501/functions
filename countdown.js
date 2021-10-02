@@ -2,20 +2,21 @@ const daysEl = document.getElementById("days");
 const hoursEl = document.getElementById("hours");
 const minsEl = document.getElementById("mins");
 const secondsEl = document.getElementById("seconds");
-// const newYear = "01 jan 2022";
+const newYear = "01 jan 2022";
 let inputValue = document.getElementById("myInput");
-inputValue.value = new Date(Date.now() + 10000).toLocaleDateString("en-US", {
-  year: "numeric",
-  month: "numeric",
-  day: "numeric",
-});
-console.log(
-  new Date(Date.now() + 10000).toLocaleDateString("se-SE", {
-    year: "numeric",
-    month: "numeric",
-    day: "numeric",
-  })
-);
+let EnterDays = document.getElementById("days");
+// inputValue.value = new Date(Date.now() + 10000).toLocaleDateString("se-SE", {
+//   year: "numeric",
+//   month: "numeric",
+//   day: "numeric",
+// });
+// console.log(
+//   new Date(Date.now() + 10000).toLocaleDateString("se-US", {
+//     year: "numeric",
+//     month: "numeric",
+//     day: "numeric",
+//   })
+// );
 function countDown(newYear) {
   const newYearDate = new Date(newYear);
   const currentDate = new Date();
@@ -35,14 +36,28 @@ function countDown(newYear) {
 let a = null;
 
 function getInputValue() {
-  inputValue = inputValue.value;
-  console.log(inputValue);
+  if ((inputValue = inputValue.value)) {
+    console.log(inputValue);
+  } else {
+    EnterDays = "empty";
+  }
+
   clearInterval(a);
 
   a = setInterval(() => {
     countDown(inputValue);
   }, 1000);
 }
+
+// function getInputValueforstop() {
+//   inputValue = inputValue.value;
+
+//   clearInterval(a);
+
+//   a = setInterval(() => {
+//     countDown(inputValue);
+//   }, 1);
+
 // function getInputValue() {
 //   let a = document.getElementById("StartTimer");
 //   a = setInterval(countDown, 1000);
@@ -52,4 +67,5 @@ function getInputValueforstop() {
 
   clearInterval(a);
 }
+
 // setInterval(countDown, 1000);
